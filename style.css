@@ -2068,3 +2068,7 @@ body.lightbox-open .site-header { z-index: 1; }
   .gala-carousel--mixed .carousel-slide { flex-basis: auto; }
   .gala-carousel--mixed .carousel-slide a { height: 62vw; min-height: 240px; }
 }
+
+/* RSVP removed from header — keep an equal-width spacer so the nav stays centred */
+.header-actions:empty { width: 76px; }
+@media (max-width: 640px) { .header-actions:empty { display: none; } }
