@@ -2056,3 +2056,15 @@ body.lightbox-open .site-header { z-index: 1; }
 .band .night-lead { color: var(--brand-mint); }
 .night-recap .m-eyebrow { color: var(--brand-mint); }
 @media (max-width: 600px) { .night-list li { grid-template-columns: 2.5rem 1fr; } }
+
+/* Gala 2026 gallery — mixed-orientation auto-advancing carousel */
+.gala26-gallery { margin-top: var(--space-8); }
+.gala-carousel--mixed .carousel-slide { flex: 0 0 auto; }
+.gala-carousel--mixed .carousel-slide a { aspect-ratio: var(--ar, 3/2); height: clamp(280px, 40vw, 520px); width: auto; }
+.gala-carousel--mixed .carousel-dots { display: none; }
+.gala-carousel--mixed .carousel-arrow { top: 50%; }
+.gala26-credit { position: static; margin-top: var(--space-4); text-align: right; }
+@media (max-width: 720px) {
+  .gala-carousel--mixed .carousel-slide { flex-basis: auto; }
+  .gala-carousel--mixed .carousel-slide a { height: 62vw; min-height: 240px; }
+}
