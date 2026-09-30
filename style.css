@@ -2072,3 +2072,8 @@ body.lightbox-open .site-header { z-index: 1; }
 /* RSVP removed from header — keep an equal-width spacer so the nav stays centred */
 .header-actions:empty { width: 76px; }
 @media (max-width: 640px) { .header-actions:empty { display: none; } }
+
+/* Supporter logos: 10 logos sit as two even rows of five on desktop */
+@media (min-width: 1100px) {
+  .tile-grid--sm:has(> .tile--logo) { grid-template-columns: repeat(5, 1fr); }
+}
