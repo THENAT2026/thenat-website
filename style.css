@@ -2077,3 +2077,29 @@ body.lightbox-open .site-header { z-index: 1; }
 @media (min-width: 1100px) {
   .tile-grid--sm:has(> .tile--logo) { grid-template-columns: repeat(5, 1fr); }
 }
+
+/* Event recaps — headline summary blocks on past event pages */
+.recap-title { font-family: var(--font-display); font-size: var(--text-xl); line-height: 1.15; letter-spacing: -0.01em; margin: var(--space-2) 0 var(--space-5); }
+.recap-question { margin-block: var(--space-10); padding: var(--space-6) var(--space-8); border-left: 2px solid var(--color-mint); background: oklch(1 0 0 / 0.04); border-radius: var(--radius-lg); }
+.recap-question .m-eyebrow { margin: 0 0 var(--space-3); color: var(--color-mint); }
+.recap-question p:last-child { font-family: var(--font-display); font-size: var(--text-lg); line-height: 1.3; margin: 0; }
+.recap-h { font-family: var(--font-body); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.18em; color: var(--color-mint); margin: var(--space-12) 0 var(--space-4); }
+.recap-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--color-border); }
+.recap-list li { display: grid; grid-template-columns: 2.75rem 1fr; gap: var(--space-3); padding-block: var(--space-5); border-bottom: 1px solid var(--color-border); }
+.recap-num { font-family: var(--font-display); font-size: var(--text-sm); color: var(--color-mint); letter-spacing: 0.08em; padding-top: 0.2em; }
+.recap-list h3 { font-family: var(--font-display); font-size: var(--text-base); line-height: 1.25; margin: 0 0 var(--space-1); }
+.recap-list p { font-size: var(--text-sm); line-height: 1.55; margin: 0; color: var(--color-text-muted); }
+.recap-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); }
+.recap-stat { padding: var(--space-5); border: 1px solid var(--color-border); border-radius: var(--radius-lg); }
+.recap-stat strong { display: block; font-family: var(--font-display); font-weight: 500; font-size: var(--text-xl); letter-spacing: -0.02em; color: var(--color-mint); line-height: 1.1; margin-bottom: var(--space-2); }
+.recap-stat span { display: block; font-size: var(--text-xs); line-height: 1.45; color: var(--color-text-muted); }
+.recap-note { font-size: var(--text-xs); color: var(--color-text-muted); margin-top: var(--space-3); }
+.recap-quote { margin: var(--space-12) 0 0; padding: 0; font-family: var(--font-display); font-size: var(--text-lg); line-height: 1.3; }
+.recap-quote footer { font-family: var(--font-body); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.14em; color: var(--color-text-muted); margin-top: var(--space-3); }
+.recap-people { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--color-border); }
+.recap-people li { padding-block: var(--space-4); border-bottom: 1px solid var(--color-border); font-size: var(--text-sm); }
+.recap-people li strong { font-family: var(--font-display); font-weight: 500; }
+.recap-people li span { display: block; color: var(--color-text-muted); font-size: var(--text-xs); margin-top: 2px; }
+@media (max-width: 720px) { .recap-stats { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 420px) { .recap-stats { grid-template-columns: 1fr; } .recap-question { padding: var(--space-5); } }
+.recap-list h3, .recap-list p, .recap-people li { max-width: none; }
