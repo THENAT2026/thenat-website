@@ -2103,3 +2103,4 @@ body.lightbox-open .site-header { z-index: 1; }
 @media (max-width: 720px) { .recap-stats { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 420px) { .recap-stats { grid-template-columns: 1fr; } .recap-question { padding: var(--space-5); } }
 .recap-list h3, .recap-list p, .recap-people li { max-width: none; }
+.recap-stat strong { font-size: var(--text-lg); white-space: nowrap; }
