@@ -2104,3 +2104,16 @@ body.lightbox-open .site-header { z-index: 1; }
 @media (max-width: 420px) { .recap-stats { grid-template-columns: 1fr; } .recap-question { padding: var(--space-5); } }
 .recap-list h3, .recap-list p, .recap-people li { max-width: none; }
 .recap-stat strong { font-size: var(--text-lg); white-space: nowrap; }
+
+/* Impact — THE NAT GARDEN mini section */
+.garden-split { display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(var(--space-8), 5vw, var(--space-16)); align-items: center; }
+.nat-garden .m-eyebrow { color: var(--brand-mint); }
+.nat-garden .m-heading { margin: var(--space-2) 0 var(--space-5); }
+.garden-stats { grid-template-columns: repeat(2, 1fr); margin-top: var(--space-8); }
+.nat-garden .recap-stat { border-color: var(--color-band-border); }
+.nat-garden .recap-stat strong { color: var(--brand-mint); }
+.garden-media { margin: 0; }
+.garden-media img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--radius-lg); }
+.garden-media figcaption { font-size: var(--text-xs); font-style: italic; opacity: .7; margin-top: var(--space-2); text-align: right; }
+@media (max-width: 860px) { .garden-split { grid-template-columns: 1fr; } .garden-media { order: -1; } .garden-media img { aspect-ratio: 3 / 2; } }
+@media (max-width: 420px) { .garden-stats { grid-template-columns: repeat(2, 1fr); } }
