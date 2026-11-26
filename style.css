@@ -2126,3 +2126,22 @@ body.lightbox-open .site-header { z-index: 1; }
 @media (min-width: 900px) {
   .tile-grid--stats6 { grid-template-columns: repeat(3, 1fr); }
 }
+
+/* Donate page: ways-to-give cards */
+.give-grid { display: grid; grid-template-columns: 1fr; gap: var(--space-5); }
+.give-card { border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-6); display: flex; flex-direction: column; gap: var(--space-3); background: oklch(1 0 0 / 0.03); }
+.give-card h3 { font-size: var(--text-lg); letter-spacing: -0.01em; }
+.give-card p { font-family: var(--font-body); color: var(--color-text-muted); }
+.give-card .m-eyebrow { margin: 0; }
+.give-card .text-cta { margin-top: auto; align-self: flex-start; }
+.give-card--lead { border-color: var(--color-mint); }
+.give-details { display: grid; grid-template-columns: auto 1fr; gap: var(--space-1) var(--space-4); font-family: var(--font-body); font-size: var(--text-sm); }
+.give-details dt { color: var(--color-text-faint); }
+.give-details dd { margin: 0; color: var(--color-text); }
+.give-small { font-size: var(--text-xs); color: var(--color-text-faint) !important; }
+.give-disclaimer { margin-top: var(--space-6); }
+.give-legal { margin-top: var(--space-5); font-family: var(--font-body); font-size: var(--text-xs); color: var(--color-on-media-muted); max-width: 52ch; }
+.header-actions .text-cta--donate { font-weight: 600; }
+@media (min-width: 700px) and (max-width: 999px) { .give-grid { grid-template-columns: repeat(2, 1fr); } .give-card--lead { grid-column: 1 / -1; } }
+@media (min-width: 1000px) { .give-grid { grid-template-columns: repeat(3, 1fr); } }
+.nowrap { white-space: nowrap; }
