@@ -2121,3 +2121,9 @@ body.lightbox-open .site-header { z-index: 1; }
 /* Davos 2027 upcoming event tiles: taller, stronger scrim for bright snowy photos */
 .tile-grid--events .tile { min-height: 480px; }
 .tile-grid--events .tile-scrim { background: linear-gradient(to top, oklch(0.12 0.02 200 / 0.92) 0%, oklch(0.12 0.02 200 / 0.7) 50%, oklch(0.12 0.02 200 / 0.2) 100%); }
+
+/* Impact: five stat tiles sit on one row on desktop */
+@media (min-width: 1100px) {
+  .tile-grid--stats5 { grid-template-columns: repeat(5, 1fr); }
+  .tile-grid--stats5 .tile-stat-num { font-size: clamp(2rem, 2.9vw, 2.75rem); white-space: nowrap; }
+}
